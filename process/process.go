@@ -35,6 +35,7 @@ func (proc *Proc) Start() error {
 			outfile,
 		},
 	}
+
 	process, err := os.StartProcess(proc.Cmd, proc.Argv, procAttr)
 	if err != nil {
 		log.Print(err)
